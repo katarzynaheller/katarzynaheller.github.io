@@ -20,15 +20,15 @@
     <!-- TITLE -->
     <div class="grid-container hero">
         <div>
-            <h1 class="text-white fs-200 uppercase letter-spacing-2">Hi! I'm Katarzyna, an aspiring <span
+            <h1 class="text-white fs-200 uppercase letter-spacing-2">Hi! I'm Katarzyna, a creative <span
                     class="d-block fs-700 letter-spacing-2 uppercase" style="font-weight: 300;">website
                     developer</span></h1>
             <!-- navigation -->
             <div class="tab-list underline-indicators flex" style="padding-top: 2em;">
-                <button aria-selected="true" class="uppercase bg-dark fs-200 text-white letter-spacing-3"
-                    style="font-weight: 200;">Portfolio</button>
-                <a href="images/KatarzynaHeller_CV_website.pdf" aria-selected="false"
-                    class="uppercase bg-dark fs-200 text-white letter-spacing-3" style="font-weight: 200;">Resume</a>
+                <a href="#portfolio" aria-selected="true" class="uppercase bg-dark fs-200 text-white letter-spacing-3"
+                    style="font-weight: 200;">Portfolio</a>
+                <a href="#resume" aria-selected="false" class="uppercase bg-dark fs-200 text-white letter-spacing-3"
+                    style="font-weight: 200;">Resume</a>
                 <a href="https://github.com/katarzynaheller" aria-selected="false"
                     class="uppercase bg-dark fs-200 text-white letter-spacing-3" style="font-weight: 200;">Github</a>
             </div>
@@ -45,158 +45,162 @@
         </picture>
     </div>
 
-
-
     <!-- ABOUT -->
-    <div class="grid-container" style="padding: 2rem;">
-        <div>
-            <h2 class="numbered-title"><span>01 </span>about</h2>
+    <section id="about">
+        <div class="grid-container" style="padding: 2rem;">
+            <div>
+                <h2 class="numbered-title"><span>01 </span>about</h2>
+            </div>
+            <!-- note -->
+            <div class="about-note" style="padding-top: 2rem;">
+                <p class="letter-spacing-3"> My adventure with web development
+                    began with
+                    WordPress. I worked in a WordPress agency and hosted my own podcast. Now, equipped with
+                    Django & Django REST Framework I <span style="text-decoration: underline; font-weight: bold;"> craft
+                        websites for
+                        others.</span>
+                </p>
+            </div>
         </div>
-        <!-- note -->
-        <div class="about-note" style="padding-top: 2rem;">
-            <p class="letter-spacing-3"> My adventure with web development
-                began with
-                WordPress. I worked in a WordPress agency and hosted my own podcast. Now, equipped with
-                Django & Django REST Framework I aim to work as a
-                web developer.
-            </p>
-        </div>
-    </div>
+    </section>
 
     <!-- TECHNOLOGY -->
-    <div class="grid-container" style="padding-top: 2rem;">
-        <div>
-            <h2 class="numbered-title"><span>02 </span>technology</h2>
-        </div>
+    <section id="technology">
+        <div class="grid-container" style="padding-top: 2rem;">
+            <div>
+                <h2 class="numbered-title"><span>02 </span>technology</h2>
+            </div>
 
-        <!-- tiles -->
-        <div class="tiles" style="padding-top: 2rem; padding-bottom: 2rem;">
-            <div class="tile-item bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                CSS<span style="font-weight: 100;">&</span>HTML
-            </div>
-            <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                Django<span style="font-weight: 100;">&</span>REST
-            </div>
-            <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                Bootstrap
-            </div>
-            <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                WordPress
+            <!-- tiles -->
+            <div class="tiles" style="padding-top: 2rem; padding-bottom: 2rem;">
+                <div class="tile-item bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
+                    CSS<span style="font-weight: 100;">&</span>HTML
+                </div>
+                <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
+                    Django<span style="font-weight: 100;">&</span>REST
+                </div>
+                <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
+                    Bootstrap
+                </div>
+                <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
+                    WordPress
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
     <!-- PORTFOLIO -->
-
-    <div class="grid-container" style="padding-top: 2rem;">
-        <div>
-            <h2 class="numbered-title"><span>03 </span>portfolio</h2>
-        </div>
-        <!-- portfolio grid -->
-        <div>
-            <div class="portfolio-block" style="padding-top: 2rem;">
-                <div class="image-container">
-                    <img src="images/podcast_blog.png">
-                    <div class="overlay">
-                        <p class="title-on-image uppercase letter-spacing-3">Blog for 90+ podcast
-                            episodes</p>
+    <section id="portfolio">
+        <div class="grid-container" style="padding-top: 2rem;">
+            <div>
+                <h2 class="numbered-title"><span>03 </span>portfolio</h2>
+            </div>
+            <!-- portfolio grid -->
+            <div>
+                <div class="portfolio-block" style="padding-top: 2rem;">
+                    <div class="image-container">
+                        <img src="images/podcast_blog.png">
+                        <div class="overlay">
+                            <p class="title-on-image uppercase letter-spacing-3">Blog for 90+ podcast
+                                episodes</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-block">
-                <div class="image-container">
-                    <img src="images/yoga_teacher_website.png">
-                    <div class="overlay">
-                        <p class="title-on-image uppercase letter-spacing-3">Website for a yoga teacher
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid">
                 <div class="portfolio-block">
                     <div class="image-container">
-                        <img src="images/online_course.png">
+                        <img src="images/web_design_yoga_teacher.png">
                         <div class="overlay">
-                            <p class="title-on-image uppercase letter-spacing-3">Online platform for a
-                                course</p>
+                            <p class="title-on-image uppercase letter-spacing-3">Website for a yoga teacher
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="portfolio-block">
+                        <div class="image-container">
+                            <img src="images/online_course.png">
+                            <div class="overlay">
+                                <p class="title-on-image uppercase letter-spacing-3">Online platform for a
+                                    course</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
 
     <!-- PROJECTS GALLERY -->
-    <div class="grid-container" style="padding: 2rem;">
-        <div>
-            <h2 class="numbered-title"><span>04 </span>gallery</h2>
+    <section id="gallery">
+        <div class="grid-container" style="padding: 2rem;">
+            <div>
+                <h2 class="numbered-title"><span>04 </span>gallery</h2>
+            </div>
+            <!-- gallery grid -->
+            <div class="gallery-grid" style="padding-top: 2rem;">
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/yoga_poster.png">
+                        <div class="overlay">
+                            <p class="title-on-image fs-200 letter-spacing-3">Poster</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/logo.png">
+                        <div class="overlay">
+                            <p class="title-on-image fs-200 letter-spacing-3">Logo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/sm_graphics.png">
+                        <div class="overlay">
+                            <p class="title-on-image fs-200 letter-spacing-3">Graphics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/selfdevelopment_sheets.png">
+                        <div class="overlay">
+                            <p class="title-on-image fs-200 letter-spacing-3">Sheets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/pinterest_profile_graphics.png">
+                        <div class="overlay">
+                            <p class="title-on-image fs-200 letter-spacing-3">Pinterest</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/wallpaper.png">
+                        <div class="overlay">
+                            <p class="title-on-image fs-200 letter-spacing-3">Wallpaper</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- gallery grid -->
-        <div class="gallery-grid" style="padding-top: 2rem;">
-            <div class="gallery-item">
-                <div class="image-container">
-                    <img src="images/yoga_poster.png">
-                    <div class="overlay">
-                        <p class="title-on-image fs-200 letter-spacing-3">Poster</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <div class="image-container">
-                    <img src="images/logo.png">
-                    <div class="overlay">
-                        <p class="title-on-image fs-200 letter-spacing-3">Logo</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <div class="image-container">
-                    <img src="images/sm_graphics.png">
-                    <div class="overlay">
-                        <p class="title-on-image fs-200 letter-spacing-3">Graphics</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="image-container">
-                    <img src="images/selfdevelopment_sheets.png">
-                    <div class="overlay">
-                        <p class="title-on-image fs-200 letter-spacing-3">Sheets</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <div class="image-container">
-                    <img src="images/pinterest_profile_graphics.png">
-                    <div class="overlay">
-                        <p class="title-on-image fs-200 letter-spacing-3">Pinterest</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <div class="image-container">
-                    <img src="images/wallpaper.png">
-                    <div class="overlay">
-                        <p class="title-on-image fs-200 letter-spacing-3">Wallpaper</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- TESTIMONIALS CAROUSEL -->
-
     <div class="grid-container" style="padding-top: 2rem;">
 
         <div>
-            <h2 class="numbered-title"><span>04 </span>testimonials</h2>
+            <h2 class="numbered-title"><span>05 </span>testimonials</h2>
         </div>
         <!-- carousel with quotes -->
         <div>
@@ -255,17 +259,76 @@
             </div>
         </div>
     </div>
+
+    <!-- RESUME -->
+    <section id="resume">
+        <div class="grid-container" style="padding-top: 2rem;">
+
+            <div>
+                <h2 class="numbered-title"><span>06 </span>resume</h2>
+            </div>
+            <div class="py-5">
+                <div class="container grid">
+                    <div class="experience-item">
+                        <h4>Django designed</h4>
+                        <p class="date">2023</p>
+                        <p class="job-title">Freelance web developer</p>
+                        <p class="job-description">Building web projects based on
+                            Django, DRF, Bootstrap, CSS and HTML.</p>
+                    </div>
+
+
+                    <div class="experience-item">
+                        <h4>WP Served</h4>
+                        <p class="date">2020-2021</p>
+                        <p class="job-title">WordPress freelancer</p>
+                        <p class="job-description">Work in WordPress agency. Building WordPress theme, designing
+                            websites.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h4>WP Served</h4>
+                        <p class="date">2020-2021</p>
+                        <p class="job-title">WordPress freelancer</p>
+                        <p class="job-description">Work in WordPress agency. Building WordPress theme, designing
+                            websites.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h4>Solopreneur</h4>
+                        <p class="date">2017-2020</p>
+                        <p class="job-title">Podcaster/Bloger</p>
+                        <p class="job-description">Hosting own podcast, blog, organizing meetup for women.</p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h4>BioBazar</h4>
+                        <p class="date">2015-2017</p>
+                        <p class="job-title">Marketing Specialist</p>
+                        <p class="job-description">Building brand awareness via content marketing and organizing
+                            educational events.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    </section>
     <!-- CONTACT  -->
-    <div class="grid-container" style="padding: 2rem;">
-        <div>
-            <h2 class="numbered-title"><span>05 </span>Contact</h2>
+    <section class="contact">
+        <div class="grid-container" style="padding: 2rem;">
+            <div>
+                <h2 class="numbered-title"><span>07 </span>Contact</h2>
+            </div>
+            <!-- contact mail -->
+            <div style="padding:  1rem 1rem 1rem;">
+                <a href="mailto:djangodesigned@gmail.com" class="uppercase letter-spacing-2"
+                    style="text-decoration: underline;">djangodesigned@gmail.com</a>
+            </div>
         </div>
-        <!-- contact mail -->
-        <div style="padding:  1rem 1rem 1rem;">
-            <a href="mailto:djangodesigned@gmail.com" class="uppercase letter-spacing-2"
-                style="text-decoration: underline;">djangodesigned@gmail.com</a>
-        </div>
-    </div>
+    </section>
+
     <!-- icons used in carousel -->
     <svg>
         <symbol id="next" viewBox="0 0 256 512">

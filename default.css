@@ -358,6 +358,27 @@ picture {
     }
 }
 
+.experience-item {
+    display: grid;
+    column-gap: 2rem;
+    margin-top: 2rem;
+    max-width: 30ch;
+}
+
+.experience-item h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.experience-item .date {
+    font-size: small;
+}
+
+.experience-item .job-title {
+    text-decoration: underline;
+}
+
+
 
 .quote {
     position: relative;
