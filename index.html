@@ -4,343 +4,276 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fonts -->
+    <link rel="icon" type="image/png" href="images/dd_logo.png" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Readex+Pro:wght@200;300;400;500;700&display=swap"
-        rel="stylesheet">
-    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="default.css">
 
-    <title>Katarzyna Antonik-Heller</title>
+    <title>Django Designed: Python Django Backend Developer</title>
+    <meta property="og:title" content="Web design & development" />
+    <meta property="og:description" content="Website development with Django, Bootstrap" />
+    <meta property="og:url" content="https://www.djangodesigned.com/" />
+    <meta property="og:image" content="" />
 </head>
 
+
 <body>
-    <!-- TITLE -->
-    <div class="grid-container hero">
-        <div>
-            <h1 class="text-white fs-200 uppercase letter-spacing-2">Hi! I'm Katarzyna, a creative <span
-                    class="d-block fs-700 letter-spacing-2 uppercase" style="font-weight: 300;">website
-                    developer</span></h1>
-            <!-- navigation -->
-            <div class="tab-list underline-indicators flex" style="padding-top: 2em;">
-                <a href="#portfolio" aria-selected="true" class="uppercase bg-dark fs-200 text-white letter-spacing-3"
-                    style="font-weight: 200;">Portfolio</a>
-                <a href="#resume" aria-selected="false" class="uppercase bg-dark fs-200 text-white letter-spacing-3"
-                    style="font-weight: 200;">Resume</a>
-                <a href="https://github.com/katarzynaheller" aria-selected="false"
-                    class="uppercase bg-dark fs-200 text-white letter-spacing-3" style="font-weight: 200;">Github</a>
-            </div>
-        </div>
-        <!-- hero image -->
-        <picture>
-            <img sizes="(max-width: 480px) 100vw, 480px" srcset="
-            images/katarzyna_profile_black_c0s4xf_c_scale,w_200.png 200w,
-            images/katarzyna_profile_black_c0s4xf_c_scale,w_351.png 351w,
-            images/katarzyna_profile_black_c0s4xf_c_scale,w_471.png 471w,
-            images/katarzyna_profile_black_c0s4xf_c_scale,w_480.png 480w"
-                src="images/katarzyna_profile_black_c0s4xf_c_scale,w_480.png" alt="profile_picture"
-                style="border-radius: 50%;">
-        </picture>
-    </div>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="grid-container" style="padding: 2rem;">
-            <div>
-                <h2 class="numbered-title"><span>01 </span>about</h2>
-            </div>
-            <!-- note -->
-            <div class="about-note" style="padding-top: 2rem;">
-                <p class="letter-spacing-3"> My adventure with web development
-                    began with
-                    WordPress. I worked in a WordPress agency and hosted my own podcast. Now, equipped with
-                    Django & Django REST Framework I <span style="text-decoration: underline; font-weight: bold;"> craft
-                        websites for
-                        others.</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TECHNOLOGY -->
-    <section id="technology">
-        <div class="grid-container" style="padding-top: 2rem;">
-            <div>
-                <h2 class="numbered-title"><span>02 </span>technology</h2>
-            </div>
-
-            <!-- tiles -->
-            <div class="tiles" style="padding-top: 2rem; padding-bottom: 2rem;">
-                <div class="tile-item bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                    CSS<span style="font-weight: 100;">&</span>HTML
-                </div>
-                <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                    Django<span style="font-weight: 100;">&</span>REST
-                </div>
-                <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                    Bootstrap
-                </div>
-                <div class="bg-dark text-white" style="padding:  2rem 1rem 1rem; border: 1px solid white;">
-                    WordPress
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio">
-        <div class="grid-container" style="padding-top: 2rem;">
-            <div>
-                <h2 class="numbered-title"><span>03 </span>portfolio</h2>
-            </div>
-            <!-- portfolio grid -->
-            <div>
-                <div class="portfolio-block" style="padding-top: 2rem;">
-                    <div class="image-container">
-                        <img src="images/podcast_blog.png">
-                        <div class="overlay">
-                            <p class="title-on-image uppercase letter-spacing-3">Blog for 90+ podcast
-                                episodes</p>
-                        </div>
+    <main>
+        <!-- HERO -->
+        <section class="full-width outline-bottom">
+            <div class="container hero-section">
+                <div class="col-2-span-4">
+                    <div class="hero-img-mobile">
+                        <img src="images/dd_hero_graphic.png">
+                    </div>
+                    <h1 class="primary-heading padding-top-special padding-bottom-30">Hi!</h1>
+                    <h3 class="midsection-heading uppercase ls-200">I'm Katarzyna</h3>
+                    <p class="text-accent outline-bottom ls-200 padding-bottom-30">A Python Backend Developer</p>
+                    <div class="flex hero-link-wrapper padding-top-30">
+                        <a href='#project-one-demo' class="uppercase ls-200">See my works </a>
+                        <img src="images/arrow_50.svg" class="arrow">
                     </div>
                 </div>
-                <div class="portfolio-block">
-                    <div class="image-container">
-                        <img src="images/web_design_yoga_teacher.png">
-                        <div class="overlay">
-                            <p class="title-on-image uppercase letter-spacing-3">Website for a yoga teacher
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="portfolio-block">
-                        <div class="image-container">
-                            <img src="images/online_course.png">
-                            <div class="overlay">
-                                <p class="title-on-image uppercase letter-spacing-3">Online platform for a
-                                    course</p>
-                            </div>
-                        </div>
+                <div class="col-6-span-6">
+                    <div class="hero-img">
+
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- PROJECTS GALLERY -->
-    <section id="gallery">
-        <div class="grid-container" style="padding: 2rem;">
-            <div>
-                <h2 class="numbered-title"><span>04 </span>gallery</h2>
+        <!-- CASE STUDY 1 DESCRIPTION -->
+        <section class="full-width outline-bottom" id="project-one-info">
+            <div class="container">
+                <div class="col-2-span-4 padding-top-30">
+                    <div class="">
+                        <h3 class="section-heading uppercase outline-bottom padding-bottom-30">Website for a luxury
+                            brand
+                        </h3>
+                    </div>
+                    <div class="">
+                        <img src="images/website_fashion_brand.jpg" alt="Design of Luxury Fashion Brand Website">
+                    </div>
+                </div>
+
+                <div class="col-7-span-4 project-description padding-top-30">
+                    <h4 class="midsection-heading uppercase">Product Discovery</h4>
+                    <p class="padding-bottom-30">Visual
+                        appearance is designed to align with the ideal customer's need for expressing individuality and
+                        authenticity as well as values of simplicity and craftsmanship.</p>
+                    <h4 class="midsection-heading uppercase">Design</h4>
+                    <p class="padding-bottom-30">Clean lines, subtle details, soft greys, simple
+                        typography and layout communicates minimalism with rebellious twist underneath as a clear
+                        picture of the brand's aesthetic and values.</p>
+                    <h4 class="midsection-heading uppercase">Technology Stack</h4>
+                    <p class="padding-bottom-30">Layout build with CSS grid system, payment API coded with Django REST
+                        Framework, deployment on Amazon Web Services (AWS).
+                    </p>
+                </div>
+
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Case study</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
             </div>
-            <!-- gallery grid -->
-            <div class="gallery-grid" style="padding-top: 2rem;">
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="images/yoga_poster.png">
-                        <div class="overlay">
-                            <p class="title-on-image fs-200 letter-spacing-3">Poster</p>
-                        </div>
+        </section>
+
+        <!-- CASE STUDY 1 GALLERY -->
+        <section class="full-width outline-bottom" id="project-one-demo">
+            <div class="container">
+                <div class="col-1-span-5">
+                    <img src="images/Fashion_brand_home.jpg" class="portfolio-item"
+                        alt="Screenshot of Homepage Fashion Luxury Brand Website">
+                    <img src="images/Fashion_brand_navigation.jpg" class="portfolio-item"
+                        alt="Screenshot of Navigation Fashion Luxury Brand Website">
+                </div>
+                <div class="col-6-span-5">
+                    <img src="images/Fashion_brand_values.jpg" class="portfolio-item"
+                        alt="Screenshot of a Website for Luxury Brand About Page">
+                    <img src="images/fashion_brand_website_nav.jpg" class="portfolio-item"
+                        alt="Screenshot of A Luxury Brand Website Minimalistic Navigation">
+                </div>
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Showcase</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
+            </div>
+        </section>
+
+        <!-- CASE STUDY 1 DESCRIPTION -->
+        <section class="full-width outline-bottom" id="project-two-info">
+            <div class="container">
+                <div class="col-2-span-4 padding-top-30">
+                    <div class="">
+                        <h3 class="section-heading uppercase outline-bottom padding-bottom-30">Booking system for yoga
+                            classes
+                        </h3>
                     </div>
+                    <div class="">
+                        <img src="images/yoga_class_booking.png"
+                            alt="Screenshot of Yoga Teacher Website and Booking System">
+                    </div>
+                </div>
+                <div class="col-7-span-4 project-description padding-top-30">
+                    <h4 class="midsection-heading uppercase">Product Discovery</h4>
+                    <p class="padding-bottom-30">The client's challenge was to prepare and conduct yoga classes while
+                        simultaneously managing responses to calls and messages regarding questions and bookings from
+                        both new and existing customers. </p>
+                    <h4 class="midsection-heading uppercase">Design</h4>
+                    <p class="padding-bottom-30">The design included developing a website integrated with a booking
+                        system to lower the entry level for new customers and improve the process of booking seats for
+                        yoga classes.</p>
+                    <h4 class="midsection-heading uppercase">Coding</h4>
+                    <p class="padding-bottom-30">Backend built with Django (bookings, manager panel) with SASS
+                        customized Bootstrap on front-end.</p>
                 </div>
 
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="images/logo.png">
-                        <div class="overlay">
-                            <p class="title-on-image fs-200 letter-spacing-3">Logo</p>
-                        </div>
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Case study</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
+            </div>
+        </section>
+        <!-- CASE STUDY 2 GALLERY -->
+        <section class="full-width outline-bottom" id="project-two-demo">
+            <div class="container">
+                <div class="col-1-span-5">
+                    <img src="images/about_me_page.jpg" class="portfolio-item"
+                        alt="Screenshot Of Yoga Teacher Website The About Me Part">
+                    <img src="images/about_me_page_2.jpg" class="portfolio-item"
+                        alt="Screenshot Of Yoga Teacher Website The About Me Part">
+                </div>
+                <div class="col-6-span-5">
+                    <img src="images/booking_system_panel.jpg" class="portfolio-item"
+                        alt="Screenshot Of Booking Yoga Class System">
+                    <img src="images/booking_system_confirmation.jpg" class="portfolio-item"
+                        alt="Screenshot Of Booking Yoga Class System">
+                </div>
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Showcase</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
+            </div>
+        </section>
+
+
+
+
+        <!-- ABOUT WEB DEVELOPMENT -->
+        <section class="full-width outline-bottom">
+            <div class="container">
+                <div class="col-2-span-6">
+                    <h3 class="section-heading about-title padding-bottom-30">Backend development</h3>
+                    <p class="about-note padding-top-150">I am a Python backend developer building expertise in Django
+                        and Django REST Framework.
+                        My technology stack includes Django, DRF, PostgreSQL, Celery, AWS (ECS, EKS), and Docker,
+                        with previous experience in delivering web projects using WordPress.
+                    </p>
+                </div>
+                <div class="col-9-span-2">
+                    <div class="bold-list-flex v-flex">
+                        <p class="bold-list-heading uppercase">Python</p>
+                        <p class="bold-list-heading uppercase">Django</p>
+                        <p class="bold-list-heading uppercase">API REST</p>
+                        <p class="bold-list-heading uppercase">Docker</p>
+                        <p class="bold-list-heading uppercase">PostgreSQL</p>
+                        <p class="bold-list-heading uppercase">AWS</p>
                     </div>
+                </div>
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Backend development</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
+            </div>
+        </section>
+
+        <!-- QUOTE -->
+        <section class="full-width outline-bottom">
+            <div class="container">
+                <div class="col-2-span-6">
+                    <h3 class="section-heading padding-top-100">I haven't seen a person so determined
+                        to find solutions for a long time. </h3>
+                    <p class="text-accent padding-bottom-100">- Piotr, Engineer Manager </p>
+
                 </div>
 
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="images/sm_graphics.png">
-                        <div class="overlay">
-                            <p class="title-on-image fs-200 letter-spacing-3">Graphics</p>
-                        </div>
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Testimonials</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
+            </div>
+        </section>
+        <!-- ABOUT PHILOSOPHY -->
+        <section class="full-width outline-bottom">
+            <div class="container">
+                <div class="col-2-span-6">
+                    <h3 class="section-heading about-title padding-bottom-30">Web development </h3>
+                    <p class="about-note padding-top-150">I utilize Django and Django REST Framework to build
+                        customizable features for web projects. Although my journey in web development began with
+                        WordPress, I soon realized I wanted more freedom to create fully tailored solutions. Instead of
+                        relying on plugins, I learned how to code and began building my own backends.
+                    </p>
+                </div>
+                <div class="col-9-span-2">
+                    <div class="bold-list-flex v-flex">
+                        <p class="bold-list-heading uppercase">Usability</p>
+                        <p class="bold-list-heading uppercase">Accessibility</p>
+                        <p class="bold-list-heading uppercase">Empathy</p>
+                        <p class="bold-list-heading uppercase">Simplicity</p>
+                        <p class="bold-list-heading uppercase">User research</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="images/selfdevelopment_sheets.png">
-                        <div class="overlay">
-                            <p class="title-on-image fs-200 letter-spacing-3">Sheets</p>
-                        </div>
-                    </div>
+                <aside class="col-side-end side-arrow">
+                    <p class="rotate side-title uppercase">Contact</p>
+                    <img src="images/arrow_50.svg" class="arrow">
+                </aside>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="full-width outline-bottom">
+            <div class="container">
+                <div class="col-2-span-2 outline-right">
+                    <p class="text-accent padding-top-100">
+                        Share your:</p>
+                    <span class="typewriting midsection-heading uppercase">
+                        <span>
+                            <span>Idea</span>
+                            <span>Business</span>
+                            <span>Podcast</span>
+                            <span>E-course</span>
+                        </span>
+                    </span>
+                    </p>
                 </div>
+                <div class="col-5-span-5">
+                    <p class="text-accent padding-top-100">Write me a message:</p>
+                    <a href="mailto:hello@djangodesigned.com" class="mail">katarzynaheller1@gmail.com</a>
 
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="images/pinterest_profile_graphics.png">
-                        <div class="overlay">
-                            <p class="title-on-image fs-200 letter-spacing-3">Pinterest</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="images/wallpaper.png">
-                        <div class="overlay">
-                            <p class="title-on-image fs-200 letter-spacing-3">Wallpaper</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <footer class="small footer-container padding-top-30 padding-bottom-30">
+            <p>&copy; 2024 Django Designed. All rights reserved.</p>
+            <div class="v-flex footer-icon-wrapper">
 
-    <!-- TESTIMONIALS CAROUSEL -->
-    <div class="grid-container" style="padding-top: 2rem;">
+                <a href="https://www.behance.net/katheller"><img src="images/behance.svg" alt="behance"></a>
+                <a href="https://www.linkedin.com/in/katarzynaheller/"><img src="images/linkedin.svg"
+                        alt="linkedin"></a>
+                <a href="https://dribbble.com/katarzynaheller"><img src="images/dribbble.svg" alt="dribbble"></a>
+                <a href="https://github.com/katarzynaheller/"><img src="images/github.svg" alt="github"></a>
 
-        <div>
-            <h2 class="numbered-title"><span>05 </span>testimonials</h2>
-        </div>
-        <!-- carousel with quotes -->
-        <div>
-            <div class="carousel">
-                <div>
-                    <div class="quote" id="quote-1">
-                        <p style="outline: 1px solid hsl(var(--clr-white)); margin: 3rem;padding: 3rem;">
-                            "Specifically,
-                            simply,
-                            with taste and
-                            without
-                            unnecessary beating around the bush! I'm
-                            glad I found you"</p>
-                        <a class="next" href="#quote-2" aria-label="next">
-                            <svg>
-                                <use href="#next"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="quote" id="quote-2">
-                        <p style="outline: 1px solid hsl(var(--clr-white)); margin: 3rem;padding: 3rem;">“I
-                            am amazed
-                            that it
-                            can be done in such a simple way!”</p>
-                        <a class="previous" href="#quote-1">
-                            <svg>
-                                <use href="#previous"></use>
-                            </svg>
-                        </a>
-                        <a class="next" href="#quote-3">
-                            <svg>
-                                <use href="#next"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="quote" id="quote-3">
-                        <p style="outline: 1px solid hsl(var(--clr-white)); margin: 3rem;padding: 3rem;">“Such a light
-                            and
-                            pleasant form. You are wonderful. Thank you so much!”</p>
-                        <a class="previous" href="#quote-1">
-                            <svg>
-                                <use href="#previous"></use>
-                            </svg>
-                        </a>
-                        <a class="next" href="#quote-1" aria-label="next">
-                            <svg>
-                                <use href="#next"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- RESUME -->
-    <section id="resume">
-        <div class="grid-container" style="padding-top: 2rem;">
-
-            <div>
-                <h2 class="numbered-title"><span>06 </span>resume</h2>
-            </div>
-            <div class="py-5">
-                <div class="container grid">
-                    <div class="experience-item">
-                        <h4>Django designed</h4>
-                        <p class="date">2023</p>
-                        <p class="job-title">Freelance web developer</p>
-                        <p class="job-description">Building web projects based on
-                            Django, DRF, Bootstrap, CSS and HTML.</p>
-                    </div>
-
-
-                    <div class="experience-item">
-                        <h4>WP Served</h4>
-                        <p class="date">2020-2021</p>
-                        <p class="job-title">WordPress freelancer</p>
-                        <p class="job-description">Work in WordPress agency. Building WordPress theme, designing
-                            websites.</p>
-                    </div>
-
-                    <div class="experience-item">
-                        <h4>Solopreneur</h4>
-                        <p class="date">2017-2020</p>
-                        <p class="job-title">Podcaster/Bloger</p>
-                        <p class="job-description">Hosting own podcast, blog, organizing meetup for women.</p>
-                    </div>
-
-                    <div class="experience-item">
-                        <h4>BioBazar</h4>
-                        <p class="date">2015-2017</p>
-                        <p class="job-title">Marketing Specialist</p>
-                        <p class="job-description">Building brand awareness via content marketing and organizing
-                            educational events.</p>
-                    </div>
-                </div>
             </div>
 
-        </div>
-    </section>
+        </footer>
 
-    </section>
-    <!-- CONTACT  -->
-    <section class="contact">
-        <div class="grid-container" style="padding: 2rem;">
-            <div>
-                <h2 class="numbered-title"><span>07 </span>Contact</h2>
-            </div>
-            <!-- contact mail -->
-            <div style="padding:  1rem 1rem 1rem;">
-                <a href="mailto:djangodesigned@gmail.com" class="uppercase letter-spacing-2"
-                    style="text-decoration: underline;">djangodesigned@gmail.com</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- icons used in carousel -->
-    <svg>
-        <symbol id="next" viewBox="0 0 256 512">
-            <path fill="white"
-                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-        </symbol>
 
-        <symbol id="previous" viewBox="0 0 256 512">
-            <path fill="white"
-                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
-        </symbol>
-    </svg>
+
+    </main>
+
+
+
 </body>
 
-<!-- FOOTER -->
-<footer>
-    <hr>
-    <div class="typewriter">
-
-        <h2>Let me craft website for you.</h2>
-
-    </div>
-</footer>
+</html>
